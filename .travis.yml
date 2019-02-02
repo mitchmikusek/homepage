@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+script:
+  - npm test
+  - npm run test:coverage
+  - npm run build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local_dir: build
+  keep-history: true
+  repo: mitchmikusek/mitchmikusek.github.io
+  target-branch: master
+  fqdn: mitchmikusek.com
+  on:
+    branch: master
