@@ -3,13 +3,13 @@ import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css'
 import { fadeInUp } from 'react-animations'
 import { StyleSheet, css } from 'aphrodite/no-important';
-import './Home.css'
+import './APPM.css'
 import { Link } from "react-router-dom";
 
-class Home extends Component {
+class APPM extends Component {
   constructor() {
     super();
-    this.state = { sectionsComplete: 0};
+    this.state = { sectionsComplete: 0 };
     this.triggerNextSections = this.triggerNextSections.bind(this);
 
     this.styles = StyleSheet.create({ fadeInUp: { animationName: fadeInUp, animationDuration: '1s' } })
@@ -39,24 +39,26 @@ class Home extends Component {
     return (
       <div className={`APPM`}>
         <div className={`header`}>
-          <Link to="/">cd ~</Link>
+          <Link to="/projects">cd ~/projects</Link>
           <br /><br />
         </div>
         {
           this.state.sectionsComplete >= 0 &&
           (<Typist className={`intro mono-key`} {...this.typistConfig}>
-            > <Typist.Delay ms={1500} /> Hello world<Typist.Backspace count={11} delay={200} /> Hi there, I'm Mitch!
+            > <Typist.Delay ms={1500} /> 亚太职协 <br />Asia Pacific Professional Managers App:
           </Typist>)
         }
 
         {
           this.state.sectionsComplete >= 1 &&
           (<div className={`${css(this.styles.fadeInUp)}`}>
-            <span className={`list-title`}>Properties:</span>
+            <span className={`list-title`}>Technologies:</span>
             <ul className={`list-color removeBullets`}>
-              <li><span role="img" aria-label="Computer">🖥</span> <a href="https://en.wikipedia.org/wiki/Computer_engineering" target="_blank" rel="noopener noreferrer">>open Computer Engineer</a></li>
-              <li><span role="img" aria-label="Brain">🧠</span> <a href="https://agilemanifesto.org/" target="_blank" rel="noopener noreferrer">>open Agilist</a></li>
-              <li><span role="img" aria-label="Space Invader">👾</span> <a href="https://steamcommunity.com/id/CatSensei" target="_blank" rel="noopener noreferrer">>open Gamer</a></li>
+              <li>Ionic</li>
+              <li>Angular 2</li>
+              <li>Google Cloud Platform</li>
+              <li>Xcode</li>
+              <li>Android Studio</li>
             </ul>
             <br />
           </div>)
@@ -65,11 +67,10 @@ class Home extends Component {
         {
           this.state.sectionsComplete >= 2 &&
           (<div className={`summary ${css(this.styles.fadeInUp)}`}>
-            <ul className={`summary removeBullets`}>
-              <li><Link to="projects">> cd ./projects</Link></li>
-              {/* <li><Link to="projects">> cd ./about-me</Link></li>
-              <li><Link to="projects">> cd ./resume</Link></li> */}
-            </ul>
+            <div>App showcasing content for the Asia Pacific Professional Managers Association, utilizing existing Wordpress site APIs to provide a native mobile experience with additional features including live chat with prospective students, connection to local apps, and native share / email</div>
+            <a href="https://itunes.apple.com/us/app/%E4%BA%9A%E5%A4%AA%E8%81%8C%E5%8D%8F/id1279609767?mt=8" target="_blank" rel="noopener noreferrer">>open iOS App Link</a>
+            <br />
+            <a href="https://play.google.com/store/apps/details?id=com.apacpma.appm" target="_blank" rel="noopener noreferrer">>open Android App Link</a>
           </div>)
         }
       </div>
@@ -79,4 +80,4 @@ class Home extends Component {
 
 
 
-export default Home;
+export default APPM;
