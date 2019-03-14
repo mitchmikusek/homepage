@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mitchmikusek
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mitchmikusek.com
+  * I am mitchmikusek (https://keybase.io/mitchmikusek) on keybase.
+  * I have a public key ASDZlR2db6eudbkYxm3HhRU2Ep9grmF4oQkBNH2Bp8NBDgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01207b3ab036dcf5257610be34d2d5345aca4e69203592df75f119a94d744108bd7b0a",
+      "host": "keybase.io",
+      "kid": "0120d9951d9d6fa7ae75b918c66dc7851536129f60ae6178a10901347d81a7c3410e0a",
+      "uid": "dfdf01a164619ba8af7139ef7e7f3519",
+      "username": "mitchmikusek"
+    },
+    "merkle_root": {
+      "ctime": 1552585156,
+      "hash": "2ae7e53ab52a34e6fc57befadf533519aab7203e8be5ca6f3dc0667a50805d1158d29af0da7a75f0c8a4af1eaaf366afd2aa486fd7a8fd16f93d669742f17a20",
+      "hash_meta": "30bdca0242ebc4e7a02589eadee7d696199d8af3b0e34c9232679af19a76a2b5",
+      "seqno": 4949527
+    },
+    "service": {
+      "entropy": "+CKoFMxTVdj9+u997r5eLmMY",
+      "hostname": "mitchmikusek.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.1.2"
+  },
+  "ctime": 1552585167,
+  "expire_in": 504576000,
+  "prev": "6e7cea002f917430d0678e1bab2e24fad258963eb1599cf6852520344c878ff0",
+  "seqno": 19,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg2ZUdnW+nrnW5GMZtx4UVNhKfYK5heKEJATR9gafDQQ4Kp3BheWxvYWTESpcCE8QgbnzqAC+RdDDQZ44bqy4k+tJYlj6xWZz2hSUgNEyHj/DEIKp37+WfxlsZxGGqOPDtJKsOAkXdLVGMZHTNDYq7ZX1GAgHCo3NpZ8RA1iNy+s0tC+uOKNTq+m7+WPtv1uEXXveC2IOTaNdowEifzgVgFXD6PnVDmoLaAhryyh8/G8OEijdrCLxwCDfDC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEILsg2ROt3NQQzgngZF3UbdYsUe2kwshgvRF9h0jQGejeo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mitchmikusek
+
+==================================================================
